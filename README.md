@@ -1,22 +1,32 @@
-Here are the codes I wrote for the course 02-604 2024 Spring session, where I used python (also GO in first week) to wrote functions that works for bioinformatics algorithms like global alignment, motif finding, and so on.
+# Bioinformatics Algorithms – 02-604 (Spring 2024)
 
-Here is the link to the corresponding week quizes of each ipynb to understand their functions: https://cogniterra.org/course/296/syllabus, and below I provided some more explaination on code purpose.
+This repository contains code written for the course **02-604: Fundamentals of Bioinformatics** (Spring 2024). The scripts implement core bioinformatics algorithms using Python (with some Go in Week 1), including global alignment, motif finding, hierarchical clustering, and suffix trees.
 
-**week3_code – Protein Fragmentation for Mass Spectrometry**
+Each Jupyter Notebook corresponds to a weekly assignment or quiz. You can refer to the course syllabus and weekly quizzes here for context:  
+🔗 [Course Syllabus and Quizzes](https://cogniterra.org/course/296/syllabus)
 
-This script generates all possible contiguous substrings (peptides) from a given protein sequence. It mimics the peptide fragmentation that occurs during mass spectrometry, helping to simulate the types of fragments that can be identified based on their mass.
+---
 
+## Weekly Highlights
 
-**week5_code – Global Alignment Implementation**
+### 🔬 `week3_code` – Protein Fragmentation for Mass Spectrometry  
+This script generates all possible contiguous substrings (peptides) from an input protein sequence. It simulates the type of fragmentation that occurs in mass spectrometry, helping to model peptide identification based on mass.
 
-This code implements the Needleman-Wunsch algorithm for global sequence alignment. It constructs an optimal alignment between two sequences by maximizing a scoring function based on matches, mismatches, and gaps—an essential task in comparing biological sequences.
+---
 
+### 🧬 `week5_code` – Global Alignment Implementation  
+Implements the **Needleman-Wunsch** algorithm for global sequence alignment. The code aligns two sequences by maximizing a scoring function that rewards matches and penalizes mismatches and gaps—critical for comparing DNA, RNA, or protein sequences.
 
-**week8_code – UPGMA for Phylogenetic Tree Construction**
+---
 
-This script implements the UPGMA (Unweighted Pair Group Method with Arithmetic Mean) algorithm, a hierarchical clustering method used to infer phylogenetic trees from pairwise distance matrices. The algorithm groups taxa based on evolutionary distance, assuming a constant rate of evolution.
+### 🌳 `week8_code` – UPGMA for Phylogenetic Tree Construction  
+Implements the **UPGMA (Unweighted Pair Group Method with Arithmetic Mean)** algorithm for hierarchical clustering. It builds a phylogenetic tree based on a distance matrix, assuming a constant molecular clock to infer evolutionary relationships.
 
+---
 
-**week10_code – Suffix Tree Construction with DFS**
+### 🌿 `week10_code` – Suffix Tree Construction and DFS Traversal  
+Constructs a **suffix tree** for a given string and performs **Depth-First Search (DFS)** traversal. Suffix trees are efficient data structures for fast pattern matching and are widely used in genome analysis and sequence comparison tasks.
 
-This code constructs a suffix tree for a given string and uses Depth-First Search (DFS) to traverse the tree. Suffix trees are powerful data structures for fast pattern matching and are fundamental in string processing applications such as genome analysis.
+---
+
+Feel free to explore the notebooks to learn more about how each algorithm is implemented.
